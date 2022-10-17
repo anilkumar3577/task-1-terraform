@@ -1,5 +1,5 @@
 resource "aws_instance" "tf-ec1" {
- ami = "ami-05fa00d4c63e32376"
+ ami = "ami-08e2d37b6a0129927"
  instance_type = "t2.micro"
  key_name = "test"
  vpc_security_group_ids = ["${aws_security_group.tf-sg.id}"]
@@ -12,7 +12,7 @@ tags = {
 }
 
 resource "aws_instance" "tf-ec2" {
- ami = "ami-05fa00d4c63e32376"
+ ami = "ami-08e2d37b6a0129927"
  instance_type = "t2.micro"
  key_name = "test"
  vpc_security_group_ids = ["${aws_security_group.tf-sg.id}"]
